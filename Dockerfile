@@ -25,6 +25,9 @@ RUN echo "export USE_CCACHE=1" >> /etc/bash.bashrc
 RUN echo "export JAVA_HOME=/home/jcrom/jdk1.6.0_45" >> /etc/bash.bashrc
 RUN echo "export ANDROID_JAVA_HOME=/home/jcrom/jdk1.6.0_45" >> /etc/bash.bashrc
 
+RUN git config --global user.email "android"
+RUN git config --global user.name "android"
+
 RUN chmod a+x /etc/sudoers
 RUN echo "jcrom ALL=(ALL) ALL" >> /etc/sudoers
 RUN echo "jcrom ALL=(ALL) NOPASSWD: /bin/mount" >> /etc/sudoers
