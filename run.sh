@@ -3,8 +3,8 @@
 cd $(dirname $0)
 
 SOURCE=$(pwd)/android
-CONTAINER=jcrom
-REPOSITORY=sola/jcrom
+CONTAINER=ubuntu14.04
+REPOSITORY=jcrom/ubuntu14.04
 
 # Create a shared folder which will be used as working directory.
 test -d $SOURCE || mkdir $SOURCE

@@ -7,6 +7,6 @@ SOURCE=$(pwd)/android
 # Create a shared folder which will be used as working directory.
 test -d $SOURCE || mkdir $SOURCE
 
-docker build --no-cache --rm -t sola/jcrom .
+docker build --no-cache --rm -t jcrom/ubuntu14.04 .
 
 exit $?
