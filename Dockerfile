@@ -34,6 +34,8 @@ RUN echo "jcrom ALL=(ALL) NOPASSWD: /bin/mount" >> /etc/sudoers
 RUN echo "jcrom ALL=(ALL) NOPASSWD: /bin/umount" >> /etc/sudoers
 RUN chmod 440 /etc/sudoers
 
+RUN apt-get install -y u-boot-tools
+
 WORKDIR /home/jcrom/android
 VOLUME /home/jcrom/android
 
